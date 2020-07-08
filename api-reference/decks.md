@@ -17,12 +17,6 @@ Return a list of decks
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=false %}
-OAuth 2.0 Bearer token.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -64,12 +58,6 @@ Return the details of a particular deck including all cards.
 Deck's unique alphanumeric code.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
-OAuth 2.0 Bearer token.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
