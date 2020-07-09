@@ -4,6 +4,7 @@
 * [Guidelines](guidelines.md)
 * [Community](community.md)
 * [Changelog](changelog.md)
+* [Blog](https://medium.com/mtgbracket)
 
 ## Guides
 
