@@ -362,3 +362,83 @@ OAuth 2.0 Bearer token.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.mtgbracket.com" path="/players/:player\_id" %}
+{% api-method-summary %}
+Get Player
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the details of a single player profile.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="player\_id" type="integer" required=true %}
+Player's unique ID.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="put" host="https://api.mtgbracket.com" path="/users/:user\_id/player" %}
+{% api-method-summary %}
+Attach Player
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Attaches a player profile to a user.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="user\_id" type="integer" required=true %}
+User's unique ID.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+OAuth 2.0 Bearer token.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="number" type="string" required=true %}
+DCI number.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="username" type="string" required=true %}
+Unique username.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
