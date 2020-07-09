@@ -10,9 +10,10 @@
 * [Getting Started](guides/getting-started.md)
 * [Authentication](guides/authentication.md)
 * [Errors](guides/errors.md)
+* [Exploring Cards](guides/exploring-cards/README.md)
+  * [Searching](guides/exploring-cards/searching-for-cards.md)
 * [Untitled](guides/untitled-1.md)
 * [Untitled](guides/untitled-2.md)
-* [Searching for Cards](guides/searching-for-cards.md)
 * [Working with Events](guides/working-with-events.md)
 
 ## API Reference
