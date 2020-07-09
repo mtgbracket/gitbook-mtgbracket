@@ -13,7 +13,7 @@
 * [Untitled](guides/untitled-1.md)
 * [Untitled](guides/untitled-2.md)
 * [Searching for Cards](guides/searching-for-cards.md)
-* [Untitled](guides/untitled-4.md)
+* [Working with Events](guides/working-with-events.md)
 
 ## API Reference
 
