@@ -13,8 +13,8 @@
 * [Exploring Cards](guides/exploring-cards/README.md)
   * [Searching](guides/exploring-cards/searching-for-cards.md)
 * [Untitled](guides/untitled-1.md)
-* [Untitled](guides/untitled-2.md)
 * [Working with Events](guides/working-with-events.md)
+* [Webhooks](guides/webhooks.md)
 
 ## API Reference
 
