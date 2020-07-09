@@ -8,6 +8,8 @@ description: >-
 
 _Mtgbracket_ provides an interface for users to search for cards, whether it's just for browsing, or for building and tuning their decks.
 
+We support searching using our own native search format, or by using [_Scryfall's_](https://scryfall.com) more advanced syntax.
+
 ## Native Search
 
 By default, _mtgbracket_ provides this functionality through its native search implementation, which supports searching for cards using the following criteria:
@@ -27,7 +29,7 @@ By default, _mtgbracket_ provides this functionality through its native search i
 
 Search parameters are cumulative and are layered separated by spaces in the URL.  Each search token is denoted using a key:value block.
 
-Example: 
+_Example_: 
 
 `https://api.mtgbracket.com/cards/search?q=t:creature%20t:legendary%20ci:uw`
 
