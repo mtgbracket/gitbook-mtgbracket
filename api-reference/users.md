@@ -105,12 +105,16 @@ OAuth 2.0 Bearer token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="last\_name" type="string" required=false %}
+{% api-method-parameter name="first\_name" type="string" required=false %}
 User's new first name.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="email" type="string" required=false %}
+{% api-method-parameter name="last\_name" type="string" required=false %}
 User's new last name.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=false %}
+User's new email address.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="avatar\_url" type="string" required=false %}
