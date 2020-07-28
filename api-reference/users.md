@@ -206,12 +206,12 @@ Unique token to identify an account to activate.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+User successfully activated.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 
 ```
 {% endapi-method-response-example %}
@@ -324,9 +324,9 @@ OAuth 2.0 Bearer token.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+User followed successfully.
 {% endapi-method-response-example-description %}
 
 ```
@@ -366,9 +366,9 @@ OAuth 2.0 Bearer token.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+User unfollowed successfully.
 {% endapi-method-response-example-description %}
 
 ```
