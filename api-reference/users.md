@@ -246,11 +246,46 @@ OAuth 2.0 Bearer token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved a list of followers for a user ID.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "items": [
+        {
+            "id": 1,
+            "follower": {
+                "id": 2,
+                "email": "john@mtgbracket.com",
+                "first_name": "john",
+                "last_name": "smith",
+                "birthday": 1575158400,
+                "tier": {
+                    "id": 1,
+                    "name": "beta",
+                    "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+                    "rank": 1
+                },
+                "date_created": 1595203200,
+                "date_updated": 1595203200,
+                "status": {
+                    "id": 2,
+                    "name": "inactive"
+                }
+            },
+            "date_created": 1595203200,
+            "date_updated": 1595203200,
+            "status": {
+                "id": 1,
+                "name": "active"
+            }
+        }
+    ],
+    "paging": {
+        "prev": null,
+        "next": null
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -284,11 +319,46 @@ OAuth 2.0 Bearer token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved a list of users being followed by a user ID.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "items": [
+        {
+            "id": 2,
+            "user": {
+                "id": 2,
+                "email": "john@mtgbracket.com",
+                "first_name": "john",
+                "last_name": "smith",
+                "birthday": 1575158400,
+                "tier": {
+                    "id": 1,
+                    "name": "beta",
+                    "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+                    "rank": 1
+                },
+                "date_created": 1595203200,
+                "date_updated": 1595203200,
+                "status": {
+                    "id": 2,
+                    "name": "inactive"
+                }
+            },
+            "date_created": 1595203200,
+            "date_updated": 1595203200,
+            "status": {
+                "id": 1,
+                "name": "active"
+            }
+        }
+    ],
+    "paging": {
+        "prev": null,
+        "next": null
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
