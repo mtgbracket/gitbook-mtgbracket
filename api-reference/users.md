@@ -58,25 +58,6 @@ User successfully retrieved.
 }
 ```
 {% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "error": {
-        "status_code": 404,
-        "message": "User not found",
-        "data": {
-            "entity": "user"
-        },
-        "debug": null
-    }
-}
-```
-{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -130,11 +111,29 @@ User's new status ID.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+User updated successfully.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 1,
+    "email": "brandin@mtgbracket.com",
+    "first_name": "brandin",
+    "last_name": "mtgbracket",
+    "birthday": 1554336000,
+    "tier": {
+        "id": 1,
+        "name": "beta",
+        "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+        "rank": 1
+    },
+    "date_created": 1554404312,
+    "date_updated": 1595961246,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 
 ```
 {% endapi-method-response-example %}
@@ -163,11 +162,25 @@ User's email address
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+A user exists with the provided email address.
 {% endapi-method-response-example-description %}
 
+```javascript
+{
+    "avatar": "http://cdn.mtgbracket.com/avatars/blue.jpg"
+}
 ```
+{% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+A user does not exist with the provided email address.
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "avatar": null
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
