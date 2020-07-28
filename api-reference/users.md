@@ -470,11 +470,38 @@ Player's unique ID.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved player details.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 1,
+    "number": "000000101",
+    "username": "misfitpixel",
+    "user": {
+        "id": 1,
+        "email": "brandin@mtgbracket.com",
+        "first_name": "brandin",
+        "last_name": "mtgbracket",
+        "birthday": 1554336000,
+        "tier": {
+            "id": 1,
+            "name": "beta",
+            "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+            "rank": 1
+        },
+        "date_created": 1554404312,
+        "date_updated": 1595961246,
+        "status": {
+            "id": 1,
+            "name": "active"
+        }
+    },
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -516,13 +543,40 @@ Unique username.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
-
+Successfully updated player profile for user.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 1,
+    "number": "999999010",
+    "username": "polkadothippo",
+    "user": {
+        "id": 1,
+        "email": "brandin@mtgbracket.com",
+        "first_name": "brandin",
+        "last_name": "mtgbracket",
+        "birthday": 1554336000,
+        "tier": {
+            "id": 1,
+            "name": "beta",
+            "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+            "rank": 1
+        },
+        "date_created": 1554404312,
+        "date_updated": 1595961246,
+        "status": {
+            "id": 1,
+            "name": "active"
+        }
+    },
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
