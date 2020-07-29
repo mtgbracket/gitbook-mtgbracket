@@ -17,7 +17,7 @@
 * [Working with Events](guides/working-with-events/README.md)
   * [The Event Workflow](guides/working-with-events/the-event-workflow.md)
   * [The Power of Rulesets](guides/working-with-events/untitled-1.md)
-  * [Untitled](guides/working-with-events/untitled.md)
+  * [Extending Events](guides/working-with-events/untitled.md)
 * [Webhooks](guides/webhooks.md)
 
 ## API Reference
