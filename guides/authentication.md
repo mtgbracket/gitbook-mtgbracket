@@ -77,7 +77,7 @@ curl --location --request POST 'http://accounts.mtgbracket.com/oauth/access_toke
 {% endtab %}
 {% endtabs %}
 
-As a response, you will receive a token:
+As a response, you will receive an `access_token`, which can be persisted to your database and linked to the user.
 
 ```javascript
 {
