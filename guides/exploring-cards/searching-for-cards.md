@@ -37,6 +37,10 @@ This search includes the **type** and **colour identity** criteria.
 
 Would return a result set that includes `creatures` that are `legendary` with a `colour identity` of `blue` and `white`.
 
+{% hint style="info" %}
+Take a look at the [Cards API reference](../../api-reference/cards.md#search-for-a-card) to review the data schema.
+{% endhint %}
+
 Criteria in your search query are treated as **AND** conditions, and will only return results that match all entered criteria.
 
 {% hint style="info" %}
