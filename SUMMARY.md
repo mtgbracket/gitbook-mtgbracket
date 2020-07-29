@@ -14,7 +14,10 @@
 * [Exploring Cards](guides/exploring-cards/README.md)
   * [Searching](guides/exploring-cards/searching-for-cards.md)
   * [Building Deck Graphs](guides/exploring-cards/building-deck-graphs.md)
-* [Working with Events](guides/working-with-events.md)
+* [Working with Events](guides/working-with-events/README.md)
+  * [The Event Workflow](guides/working-with-events/the-event-workflow.md)
+  * [Untitled](guides/working-with-events/untitled-1.md)
+  * [Untitled](guides/working-with-events/untitled.md)
 * [Webhooks](guides/webhooks.md)
 
 ## API Reference
