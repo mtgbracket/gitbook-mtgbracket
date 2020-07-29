@@ -6,6 +6,8 @@ description: >-
 
 # Errors
 
+## The Error Format
+
 The _mtgbracket_ API returns data in JSON.  Whenever an error occurs as part of a request, the error content will be returned as JSON as well.
 
 Our errors will be presented in the following structure:
@@ -31,6 +33,8 @@ In addition, they will include a relevant HTTP status code.  Some common example
 | [403](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403) | Forbidden. The authenticated user does not have permission to execute this API. |
 | [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) | Not Found.  There was an attempt to access a resource that does not exist. |
 | [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500) | Server Error. There was a problem caused by the mtgbracket service. |
+
+## Handling Supplemental Data
 
 Each _mtgbracket_ error object includes an optional `data` property.  In some cases, this array will be populated with additional information in the form of key:value pairs that may provide additional context into the encountered error.
 
