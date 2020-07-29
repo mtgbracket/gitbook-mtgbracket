@@ -43,5 +43,52 @@ In the _implicit grant_ workflow, no other steps are needed to generate a token.
 
 In the _response code_ workflow, your application must exchange a temporary token with your app's `client_secret` in order to generate an API token for your user.
 
-Upon ...
+Upon redirection from the _mtgbracket_ OAuth 2.0 screen to your application, you will receive a `response_code` within the URL.  You would then make an API request with that code, as well as your OAuth 2.0 client information to generate a valid API token.
+
+{% tabs %}
+{% tab title="HTTP" %}
+```http
+POST /oauth/access_token HTTP/1.1
+Host: accounts.mtgbracket.com
+Content-Type: application/json
+
+{
+	"grant_type": "authorization_code",
+	"client_id": "<YOUR_CLIENT_ID>",
+	"client_secret": "<YOUR_CLIENT_SECRET>",
+	"redirect_uri": "<YOUR_REDIRECT_URL>",
+	"code": "<RESPONSE_CODE>"
+}
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl --location --request POST 'http://accounts.mtgbracket.com/oauth/access_token' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"grant_type": "authorization_code",
+	"client_id": "<YOUR_CLIENT_ID>",
+	"client_secret": "<YOUR_CLIENT_SECRET>",
+	"redirect_uri": "<YOUR_REDIRECT_URL>",
+	"code": "<RESPONSE_CODE>"
+}'
+```
+{% endtab %}
+{% endtabs %}
+
+As a response, you will receive a token:
+
+```javascript
+{
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "access_token": "0ff5b2613d342f4d8ec932635c4bbe4f3adb91689a6668cc83a2476a161452c919ae58028c6dced0",
+    "refresh_token": "def502001d13b689396416aad797e4acb2a1db1e544d04aeec36a5c8b16856061368d34b626b51293882467fdd27d65324a54aa3945814bcb6d786a5114c7d6bb5a86e5395f1ae24bfc9c495bbf1e176994771d492d9537daa3a19d0058b9b2feee5b8c207936004f976a10756e0b6e1e8af6de5b9a4e331c078b1c44e97369cc72eb7ec2ca57fce8f2990567c5b3072a7618419df3011c117844a7a3afc874610fd78669aadf2b0ed5f1a17f32f4847c14a514d2c89c741b7f65f5639441a9c76de4d3ae7fa281e7c4640b8c3ebabe434689e7dc7d1c06c08edca32da6aa6b2ec9f191c57a418c2adfd9367ae2281d60d997e68c6275a64b8bf809bf6f02168862d37d874ea5a8e2cef75483a5dbd513b483da735a189ee5e4cc0d94546d4c4d9f8cc8d17c769b130653abbf754196bdb377775cb2758d4bdebee3cb0fa21fc14bb8b7ada2ae8538afcaea576b3fa6e92b4fe118406466473db8f6bf91b0324bcc8521ab0bb5db4622b4f6f8908f6b5fb3796fffe63f872dc6a"
+}
+```
+
+{% hint style="danger" %}
+Your `client_secret` should be considered privileged information and should be kept safe.  Any API request made to the _mtgbracket_ API that includes it should be made safely from a server, and **not from the client-side**.
+{% endhint %}
 
