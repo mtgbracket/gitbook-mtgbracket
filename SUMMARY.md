@@ -13,6 +13,7 @@
 * [Errors](guides/errors.md)
 * [Exploring Cards](guides/exploring-cards/README.md)
   * [Searching](guides/exploring-cards/searching-for-cards.md)
+  * [Building Deck Graphs](guides/exploring-cards/building-deck-graphs.md)
 * [Working with Events](guides/working-with-events.md)
 * [Webhooks](guides/webhooks.md)
 
