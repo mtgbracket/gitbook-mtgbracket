@@ -1,24 +1,22 @@
 ---
-description: Dummy
+description: See a list below of recent changes made to the mtgbracket API.
 ---
 
 # Changelog
 
-## 15.0.0 - 2042-12-03
+## 0.1.0 - 2020-03-22
 
 ### Fixed
 
-* Removed humans, they weren't doing fine with animals.
+* Nothing.
 
 ### Changed
 
-* Animals are now super cute, all of them.
-
-## 14.0.0 - 2042-10-06
+* Nothing.
 
 ### Added
 
-* Introduced animals into the world, we believe they're going to be a neat addition.
+* Public launch of the _mtgbracket_ API.
 
 
 

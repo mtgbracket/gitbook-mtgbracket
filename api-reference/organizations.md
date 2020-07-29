@@ -33,11 +33,20 @@ OAuth 2.0 Bearer token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved organization details.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 12,
+    "name": "MisfitPixel",
+    "date_created": 1585958400,
+    "date_updated": 1585958400,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -69,13 +78,22 @@ Organization's name.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
-
+Successfully created a new organization.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 13,
+    "name": "Acme Corp",
+    "date_created": 1595965633,
+    "date_updated": 1595965633,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -115,11 +133,20 @@ Organization's name.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully updated an organization.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 13,
+    "name": "Acme Corp 2",
+    "date_created": 1595965633,
+    "date_updated": 1595965675,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -151,9 +178,9 @@ OAuth 2.0 Bearer token.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+Successfully deleted an organization.
 {% endapi-method-response-example-description %}
 
 ```
@@ -191,11 +218,82 @@ OAuth 2.0 Bearer token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved a list of users linked to an organization.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "items": [
+        {
+            "id": 2,
+            "user": {
+                "id": 1,
+                "email": "brandin@mtgbracket.com",
+                "first_name": "brandin",
+                "last_name": "mtgbracket",
+                "birthday": 1554336000,
+                "tier": {
+                    "id": 1,
+                    "name": "beta",
+                    "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+                    "rank": 1
+                },
+                "date_created": 1554404312,
+                "date_updated": 1595961246,
+                "status": {
+                    "id": 1,
+                    "name": "active"
+                }
+            },
+            "role": {
+                "id": 4,
+                "name": "owner"
+            },
+            "date_created": 1595965634,
+            "date_updated": 1595965634,
+            "status": {
+                "id": 1,
+                "name": "active"
+            }
+        },
+        {
+            "id": 4,
+            "user": {
+                "id": 2,
+                "email": "john@mtgbracket.com",
+                "first_name": "john",
+                "last_name": "smith",
+                "birthday": 1575158400,
+                "tier": {
+                    "id": 1,
+                    "name": "beta",
+                    "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+                    "rank": 1
+                },
+                "date_created": 1595203200,
+                "date_updated": 1595203200,
+                "status": {
+                    "id": 2,
+                    "name": "inactive"
+                }
+            },
+            "role": {
+                "id": 1,
+                "name": "user"
+            },
+            "date_created": 1595965782,
+            "date_updated": 1595965782,
+            "status": {
+                "id": 1,
+                "name": "active"
+            }
+        }
+    ],
+    "paging": {
+        "prev": null,
+        "next": null
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -233,11 +331,42 @@ OAuth 2.0 Bearer token.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully retrieved a linked user's details.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 4,
+    "user": {
+        "id": 2,
+        "email": "john@mtgbracket.com",
+        "first_name": "john",
+        "last_name": "smith",
+        "birthday": 1575158400,
+        "tier": {
+            "id": 1,
+            "name": "beta",
+            "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+            "rank": 1
+        },
+        "date_created": 1595203200,
+        "date_updated": 1595203200,
+        "status": {
+            "id": 2,
+            "name": "inactive"
+        }
+    },
+    "role": {
+        "id": 1,
+        "name": "user"
+    },
+    "date_created": 1595965782,
+    "date_updated": 1595965782,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -279,13 +408,44 @@ Role ID.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
-
+Successfully added a user to an organization.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 4,
+    "user": {
+        "id": 2,
+        "email": "john@mtgbracket.com",
+        "first_name": "john",
+        "last_name": "smith",
+        "birthday": 1575158400,
+        "tier": {
+            "id": 1,
+            "name": "beta",
+            "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+            "rank": 1
+        },
+        "date_created": 1595203200,
+        "date_updated": 1595203200,
+        "status": {
+            "id": 2,
+            "name": "inactive"
+        }
+    },
+    "role": {
+        "id": 1,
+        "name": "user"
+    },
+    "date_created": 1595965782,
+    "date_updated": 1595965782,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -329,11 +489,42 @@ Role ID.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Successfully updated a linked user.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id": 4,
+    "user": {
+        "id": 2,
+        "email": "john@mtgbracket.com",
+        "first_name": "john",
+        "last_name": "smith",
+        "birthday": 1575158400,
+        "tier": {
+            "id": 1,
+            "name": "beta",
+            "description": "A free tier allowing full, unrestricted access to all of the mtgbracket's features!",
+            "rank": 1
+        },
+        "date_created": 1595203200,
+        "date_updated": 1595203200,
+        "status": {
+            "id": 2,
+            "name": "inactive"
+        }
+    },
+    "role": {
+        "id": 2,
+        "name": "organizer"
+    },
+    "date_created": 1595965782,
+    "date_updated": 1595965966,
+    "status": {
+        "id": 1,
+        "name": "active"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -369,9 +560,9 @@ OAuth 2.0 Bearer token.
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+Successfully removed a user from an organization.
 {% endapi-method-response-example-description %}
 
 ```
