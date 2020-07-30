@@ -7,3 +7,9 @@ description: >-
 
 # Introduction
 
+The following pages contain information about how our API works, the general principles that guide us, and how you can take advantage of it to build your own awesome things.
+
+In our opinion, the best place to start is to take a peek at our guidelines to understand the high-level basics of what our API is capable of, and then jump right in to the[ Getting Started ](guides/getting-started.md)guide to get going quickly.
+
+Good luck, and we're so excited to see what you build!
+
