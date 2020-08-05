@@ -12,7 +12,9 @@ Get User
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns the full account details of a single user by ID.
+Returns the full account details of a single user by ID.  
+  
+**Note**: you can also use the keyword `me` instead of an ID to retrieve the details of the user attached to the provided API token.
 {% endapi-method-description %}
 
 {% api-method-spec %}
