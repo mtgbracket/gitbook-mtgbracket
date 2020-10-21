@@ -88,6 +88,10 @@ OAuth 2.0 Bearer token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="password" type="object" required=false %}
+User's password.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="first\_name" type="string" required=false %}
 User's new first name.
 {% endapi-method-parameter %}
