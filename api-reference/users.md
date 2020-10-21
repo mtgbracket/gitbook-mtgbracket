@@ -88,6 +88,14 @@ OAuth 2.0 Bearer token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="feed\_visibility" type="string" required=false %}
+Which users can see this user's activity history in their feed. Can be set to: `public`, `following`, or `private`.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="default\_deck\_visibility" type="string" required=false %}
+Default visibility to apply when creating a new deck. Can be set to: `public`, `following`, or `private`.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="country\_code" type="string" required=false %}
 ISO-3166 code of the user's primary country of residence.
 {% endapi-method-parameter %}
