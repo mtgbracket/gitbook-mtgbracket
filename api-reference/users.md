@@ -88,6 +88,14 @@ OAuth 2.0 Bearer token.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="country\_code" type="string" required=false %}
+ISO-3166 code of the user's primary country of residence.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="language\_code" type="string" required=false %}
+ISO-639 code of the user's preferred language for localization.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="password" type="object" required=false %}
 User's password.
 {% endapi-method-parameter %}
