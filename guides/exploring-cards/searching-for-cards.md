@@ -4,7 +4,7 @@ description: >-
   format, or using the popular Scryfall format.
 ---
 
-# Searching
+# Searching Cards
 
 _Mtgbracket_ provides an interface for users to search for cards, whether it's just for browsing, or for building and tuning their decks.
 
