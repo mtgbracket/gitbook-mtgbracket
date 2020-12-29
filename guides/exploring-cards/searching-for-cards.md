@@ -35,7 +35,7 @@ _Example_:
 
 This search includes the **type** and **colour identity** criteria.
 
-Would return a result set that includes `creatures` that are `legendary` with a `colour identity` of `blue` and `white`.
+This would return a result set that includes `creatures` that are `legendary` with a `colour identity` of `blue` and `white`.
 
 {% hint style="info" %}
 Take a look at the [Cards API reference](../../api-reference/cards.md#search-for-a-card) to review the data schema.
@@ -51,7 +51,7 @@ Optionally, you can perform searches using [Scryfall](https://scryfall.com) inst
 
 Mtgbracket also supports executing searches against the [_Scryfall_](https://scryfall.com) API instead.  This can be done ad-hoc by users in the search bar, or by setting the default search provider to [_Scryfall_](https://scryfall.com) in their preferences.
 
-Details about the Scryfall search syntax can be found here:
+Details about the [_Scryfall_](https://www.scryfall.com) search syntax can be found here:
 
 {% embed url="https://scryfall.com/docs/syntax" %}
 

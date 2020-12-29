@@ -75,7 +75,7 @@ Users can search for organizations by name, or by a linked user's ID.
 
 ### Cards
 
-Cards are unique in _mtgbracket_, in that they can be filtered using the native internal format, or using a popular external service called [Scryfall](https://www.scryfall.com).
+Cards are unique in _mtgbracket_, in that they can be filtered using the native internal format, or using a popular external service called [_Scryfall_](https://www.scryfall.com).
 
 Additional information about card searching can be found in a dedicated section here: 
 
