@@ -11,7 +11,7 @@
 * [Getting Started](guides/getting-started.md)
 * [Authentication](guides/authentication.md)
 * [Errors](guides/errors.md)
-* [Searching & Ordering](guides/searching-and-ordering.md)
+* [Searching, Paging, and Ordering](guides/searching-and-ordering.md)
 * [Exploring Cards](guides/exploring-cards/README.md)
   * [Searching Cards](guides/exploring-cards/searching-for-cards.md)
   * [Building Deck Graphs](guides/exploring-cards/building-deck-graphs.md)
